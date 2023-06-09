@@ -372,7 +372,7 @@ document.addEventListener('DOMContentLoaded', function () {
     if (isToc) {
       const $cardTocLayout = document.getElementById('card-toc')
       $cardToc = $cardTocLayout.getElementsByClassName('toc-content')[0]
-      $tocLink = $cardToc.querySelectorAll('.toc-links')
+      $tocLink = $cardToc.querySelectorAll('.toc-link')
       $tocPercentage = $cardTocLayout.querySelector('.toc-percentage')
       isExpand = $cardToc.classList.contains('is-expand')
 
@@ -394,7 +394,7 @@ document.addEventListener('DOMContentLoaded', function () {
         e.preventDefault()
         const target = e.target.classList
         if (target.contains('toc-content')) return
-        const $target = target.contains('toc-links')
+        const $target = target.contains('toc-link')
           ? e.target
           : e.target.parentElement
         btf.scrollToDest(btf.getEleTop(document.getElementById(decodeURI($target.getAttribute('href')).replace('#', ''))), 300)
