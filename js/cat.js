@@ -125,7 +125,7 @@ if (document.body.clientWidth > 992) {
             }
         );
         //自定义（去掉以下注释，并注释掉其他的查看效果）
-        $("#myscoll").nekoScroll({
+        /*$("#myscoll").nekoScroll({
             nekoname:'neko1', //nekoname，相当于id
             nekoImg:'img/cat.png', //neko的背景图片
             scImg:"img/绳1.png", //绳子的背景图片
@@ -139,6 +139,6 @@ if (document.body.clientWidth > 992) {
             scroWidth:'8px', //绳子的宽度
             z_index:100, //不用解释了吧
             during:1200, //从顶部到底部滑动的时长
-        });
+        });*/
     })
 }
