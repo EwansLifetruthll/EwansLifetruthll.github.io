@@ -182,6 +182,10 @@ $('#menu-translate').on('click', function () {
 $(".menu-link").on("click", function () {
     removeRightMenu()
 });
+$("#menu-print").on("click",function (){
+    removeRightMenu()
+    window.print()
+});
 $("#rightmenu-mask").on("click", function () { removeRightMenu() });
 $("#rightmenu-mask").contextmenu(function () {
     removeRightMenu();
